@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+#tragamonedasCanvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 60vw;
+    margin: auto;
+}
+
+#maquina-tragamonedas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#cuadrado {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #b1c124;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 60vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+#matriz-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.matriz-columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.matriz-fila {
+    display: flex;
+    flex: 1;
+}
+
+.matriz-ficha {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+
+.oculto {
+    opacity: 0;
+}
+
+
+
+/* Fichas */
+.comodin {
+    background-image: url('/img/comodin.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.premio {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: gold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffcc00, #ff9900);
+}
+
+.dinero {
+    border-radius: 100%;
+    background: linear-gradient(to right, #3ae438, #1ccb37);
+    color: white;
+    font-weight: bold;
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 45%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #e6828c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ef7581;
+}
+
+
+.btn span svg {
+    fill: #fff;
+}
